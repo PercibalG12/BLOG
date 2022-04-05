@@ -5,6 +5,11 @@
 	margin: 0;
 	font-family: 'DM Sans', sans-serif;
 	box-sizing: border-box;
+	
+}
+
+html{
+	scroll-behavior: smooth;
 }
 
 .hero{
@@ -220,8 +225,8 @@ padding-bottom: 10px;
 		.team{
 			box-shadow: inset 0, 0, 3rem rgba(0, 0, 0, 0.5);
 			margin: 55px 0;
-			/* background-color: #52cffe; */
-			background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+			
+			/* background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
 		}
 
 		.team h2{
@@ -239,12 +244,12 @@ padding-bottom: 10px;
 		}
 
 		.team .team-member{
-			/* background-color: #00b2f9; */
+			
 			padding: 10px;
 			border: 1px solid #7dd9fd;
 			transition: 1s ease-in-out;
-            /* box-shadow: 4px 6px 12px 1px rgba(0,0,0,0.82); */
-			border-radius: 15px;
+           
+			border-radius: 10px;
 		}
   
 		.team .team-member .team-member-image img{
@@ -256,7 +261,7 @@ padding-bottom: 10px;
 		}
 
 		.team .team-member:hover{
-			/* background-color: #7dd9fd; */
+			
 			border-color: aliceblue;
 		
 		}
@@ -274,10 +279,63 @@ padding-bottom: 10px;
 			text-decoration: none;
 			color: #000;
 		}
+
+		/* blog section */
+        
+		.blog{
+			margin: 50px 0;
+		}
+
+		.blog .text-center *{
+			display: flex;
+			/* text-align: center; */
+			align-items: center;
+			justify-content: center;
+			padding: 10px 0;
+		}
 		
 
+		.blog .text-center h2{
+			margin-bottom: 30px;
+		}
 
 
+		.blog .container{
+         display: grid;
+		 grid-template-columns: repeat(3, 1fr);
+		 gap: 1rem;
+		 padding-left: 60px;
+		 /* margin-top: 60px; 
+		 margin-bottom: 60px; */
+		}
+
+		.blog .blog-col {
+			max-width: max-content;
+			margin-top: 60px; 
+			margin-bottom: 60px;
+		
+		}
+
+		
+		.blog .container  .blog-col span{
+			display: block;
+		
+		}
+
+		.blog .blog-col a {
+			text-decoration: none;
+			color: gray;
+		}
+	
+		.blog .container  .blog-col .img-responsive{
+		
+			border-radius: 5px;
+             width: 60%;
+			 height: 60%;
+			
+		}
+
+		
 
    /* media query for tablets */
    @media screen and (max-width:768px)  and (max-device-width: 1024px) {
